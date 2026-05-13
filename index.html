@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🚗 Atrapa las Estrellas</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🎬 PANTALLA DE INICIO -->
+  <div id="startScreen" class="start-screen">
+    <h1>🚗 Atrapa las Estrellas</h1>
+    <p>Evita obstáculos 🚧 y recoge estrellas ⭐</p>
+    <button id="startBtn">▶ Jugar</button>
+  </div>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+
+    <h1>🚗 Atrapa las Estrellas</h1>
+
+    <!-- HUD -->
+    <div class="hud">
+      <div>Puntaje: <span id="score">0</span></div>
+      <div>Tiempo: <span id="time">30</span>s</div>
+      <div>Nivel: <span id="level">1</span></div>
+    </div>
+
+    <!-- AREA DE JUEGO -->
+    <div class="game">
+
+      <!-- CARRO -->
+      <div id="car">
+        <div class="wheel w1"></div>
+        <div class="wheel w2"></div>
+        <div class="wheel w3"></div>
+        <div class="wheel w4"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- SONIDOS -->
+  <audio id="starSound" preload="auto">
+    <source src="sonido.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="boom" preload="auto">
+    <source src="explosion.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- JS -->
+  <script src="app.js" defer></script>
+
+</body>
+</html>
