@@ -2,30 +2,462 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>🚗 Atrapa las Estrellas</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- 🎬 PANTALLA DE INICIO -->
-  <div id="startScreen" class="start-screen">
-    <h1>🚗 Atrapa las Estrellas</h1>
-    <p>Evita obstáculos 🚧 y recoge estrellas ⭐</p>
-    <button id="startBtn">▶ Jugar</button>
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <!-- TEXTO -->
+      <div class="hero-text">
+
+        <h1>Atrapa las Estrellas</h1>
+
+        <p class="hero-subtitle">
+          Conduce rápido, evita obstáculos y recoge estrellas antes de que el tiempo termine.
+        </p>
+
+        <p class="hero-description">
+          Un videojuego estilo arcade donde el jugador controla un automóvil futurista,
+          esquiva peligros en la carretera y recolecta estrellas de energía para obtener
+          el mayor puntaje posible.
+        </p>
+
+        <div class="hero-buttons">
+
+          <!-- BOTON FUNCIONAL -->
+          <button id="startBtn" class="play-btn">
+            ▶ Jugar Ahora
+          </button>
+
+         
+
+        </div>
+
+      </div>
+
+      <!-- IMAGEN -->
+      <div class="hero-image">
+        <img src="./resources/imagen-juego.png" alt="Juego Atrapa las Estrellas">
+      </div>
+
+    </div>
+
+  </section>
+  <!-- ================= END HERO SECTION ================= -->
+
+  <!-- ================= GAMEPLAY SECTION ================= -->
+
+<section class="gameplay-section" id="gameplay">
+
+  <div class="gameplay-container">
+
+    <!-- TITULO -->
+    <div class="section-title">
+      <h2>🎮 Gameplay</h2>
+      <p>
+        Aprende cómo jugar y descubre las principales mecánicas de Atrapa las Estrellas.
+      </p>
+    </div>
+
+    <!-- CARDS -->
+    <div class="gameplay-cards">
+
+      <!-- CARD 1 -->
+      <div class="gameplay-card">
+
+        <div class="gameplay-icon"></div>
+
+        <h3>Controla el vehículo</h3>
+
+        <p>
+          Usa las flechas del teclado para mover el automóvil entre los carriles.
+        </p>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="gameplay-card">
+
+        <div class="gameplay-icon"></div>
+
+        <h3>Recoge estrellas</h3>
+
+        <p>
+          Atrapa estrellas de energía para aumentar tu puntaje y subir de nivel.
+        </p>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="gameplay-card">
+
+        <div class="gameplay-icon"></div>
+
+        <h3>Evita obstáculos</h3>
+
+        <p>
+          Esquiva barreras y obstáculos peligrosos para continuar en la carrera.
+        </p>
+
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="gameplay-card">
+
+        <div class="gameplay-icon"></div>
+
+        <h3>Corre contra el tiempo</h3>
+
+        <p>
+          El tiempo es limitado, así que debes reaccionar rápidamente para ganar más puntos.
+        </p>
+
+      </div>
+
+    </div>
+
   </div>
 
-  <!-- CONTENEDOR PRINCIPAL -->
-  <div class="container">
+</section>
+
+<!-- ================= END GAMEPLAY SECTION ================= -->
+<!-- ================= PERSONAJES Y LORE ================= -->
+
+<section class="lore-section" id="lore">
+
+  <div class="lore-container">
+
+    <!-- TITULO -->
+    <div class="section-title">
+
+      <h2> Personajes y Universo</h2>
+
+      <p>
+        Descubre la historia detrás de Atrapa las Estrellas y conoce
+        el universo futurista donde ocurre la carrera.
+      </p>
+
+    </div>
+
+    <!-- CONTENIDO -->
+    <div class="lore-content">
+
+      <!-- PERSONAJE -->
+      <div class="character-card">
+
+        <div class="character-image">
+          <img src="./resources/nova-racer.png" alt="Piloto futurista">
+        </div>
+
+        <div class="character-info">
+
+          <h3>Nova Racer</h3>
+
+          <p>
+            Nova Racer es un conductor futurista experto en carreras
+            de alta velocidad. Su misión es recorrer carreteras peligrosas
+            para recolectar estrellas de energía y evitar obstáculos que
+            amenazan el equilibrio de la ciudad.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- LORE -->
+      <div class="lore-card">
+
+        <h3>Historia del juego</h3>
+
+        <p>
+          En una ciudad futurista iluminada por energía estelar,
+          las carreteras principales dependen de estrellas especiales
+          para mantenerse activas. Los jugadores deben conducir a gran
+          velocidad mientras recogen estrellas y sobreviven a los peligros
+          de la autopista.
+        </p>
+
+        <p>
+          Cada estrella representa energía vital para la ciudad.
+          Mientras más estrellas se recolecten, mayor será el puntaje
+          y el nivel alcanzado.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= END PERSONAJES Y LORE ================= -->
+ <!-- ================= IMAGENES REPRESENTATIVAS ================= -->
+
+<section class="screenshots-section" id="screenshots">
+
+  <div class="screenshots-container">
+
+    <!-- TITULO -->
+    <div class="section-title">
+
+      <h2> Imágenes del Videojuego</h2>
+
+      <p>
+        Explora algunas escenas y momentos destacados de
+        Atrapa las Estrellas.
+      </p>
+
+    </div>
+
+    <!-- GALERIA -->
+    <div class="screenshots-grid">
+
+      <!-- IMAGEN 1 -->
+      <div class="screenshot-card">
+
+        <img
+          src="./resources/conductor.png"
+          alt="Gameplay principal"
+        >
+
+        <div class="screenshot-info">
+
+          <h3> Gameplay Principal</h3>
+
+          <p>
+            El jugador conduce por la autopista mientras recoge estrellas
+            y evita obstáculos.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- IMAGEN 2 -->
+      <div class="screenshot-card">
+
+        <img
+          src="./resources/Principal.PNG"
+          alt="Pantalla de inicio"
+        >
+
+        <div class="screenshot-info">
+
+          <h3>Pantalla Inicial</h3>
+
+          <p>
+            Vista principal del videojuego con diseño arcade futurista.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- IMAGEN 3 -->
+      <div class="screenshot-card">
+
+        <img
+          src="./resources/puntaje.PNG"
+          alt="Sistema de puntaje"
+        >
+
+        <div class="screenshot-info">
+
+          <h3> Sistema de Puntaje</h3>
+
+          <p>
+            Las estrellas recolectadas aumentan el puntaje y permiten
+            subir de nivel.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- IMAGEN 4 -->
+      <div class="screenshot-card">
+
+        <img
+          src="./resources/explosion.PNG"
+          alt="Explosión del juego"
+        >
+
+        <div class="screenshot-info">
+
+          <h3>Colisiones y Efectos</h3>
+
+          <p>
+            El juego incluye efectos visuales y explosiones al chocar
+            contra obstáculos.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= END IMAGENES REPRESENTATIVAS ================= -->
+ <!-- ================= CREDITOS Y DESARROLLO ================= -->
+
+<section class="credits-section" id="credits">
+
+  <div class="credits-container">
+
+    <!-- TITULO -->
+    <div class="section-title">
+
+      <h2>Créditos y Desarrollo</h2>
+
+      <p>
+        Conoce el proceso de creación de Atrapa las Estrellas,
+        las tecnologías utilizadas y el desarrollo del videojuego.
+      </p>
+
+    </div>
+
+    <!-- ================= CARDS ================= -->
+
+    <div class="credits-grid">
+
+      <!-- CARD 1 -->
+      <div class="credit-card">
+
+        <div class="credit-icon"></div>
+
+        <h3>Diseño UX/UI</h3>
+
+        <p>
+          Se diseñó una interfaz visual futurista inspirada en videojuegos arcade,
+          utilizando colores neón, tarjetas modernas y navegación intuitiva.
+        </p>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="credit-card">
+
+        <div class="credit-icon"></div>
+
+        <h3>Desarrollo</h3>
+
+        <p>
+          El videojuego fue desarrollado con HTML, CSS y JavaScript,
+          implementando mecánicas de movimiento, puntaje, niveles,
+          temporizador y colisiones.
+        </p>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="credit-card">
+
+        <div class="credit-icon"></div>
+
+        <h3>Pruebas y Mejoras</h3>
+
+        <p>
+          Se realizaron pruebas funcionales para mejorar la jugabilidad,
+          optimizar los efectos visuales y corregir errores encontrados
+          durante el proceso iterativo.
+        </p>
+
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="credit-card">
+
+        <div class="credit-icon"></div>
+
+        <h3>Publicación</h3>
+
+        <p>
+          El proyecto fue preparado para ser publicado en GitHub Pages,
+          permitiendo acceso web al videojuego y su documentación visual.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- ================= TECNOLOGIAS ================= -->
+
+    <div class="technologies">
+
+      <h3>Tecnologías Utilizadas</h3>
+
+      <div class="tech-list">
+
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>GitHub Pages</span>
+        <span>UX/UI Design</span>
+
+      </div>
+
+    </div>
+
+    <!-- ================= PROCESO ================= -->
+
+    <div class="development-process">
+
+      <h3>Proceso de Desarrollo</h3>
+
+      <p>
+        El desarrollo inició con una versión básica del videojuego.
+        Posteriormente se implementaron mejoras visuales, sistema de niveles,
+        efectos de sonido, pantalla inicial, explosiones, diseño responsivo
+        y secciones informativas para convertir el proyecto en una experiencia
+        más profesional e interactiva.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= END CREDITOS Y DESARROLLO ================= -->
+
+  <!-- ================= GAME SECTION ================= -->
+  <div class="container" id="game-section">
 
     <h1>🚗 Atrapa las Estrellas</h1>
 
     <!-- HUD -->
     <div class="hud">
-      <div>Puntaje: <span id="score">0</span></div>
-      <div>Tiempo: <span id="time">30</span>s</div>
-      <div>Nivel: <span id="level">1</span></div>
+
+      <div>
+        Puntaje:
+        <span id="score">0</span>
+      </div>
+
+      <div>
+        Tiempo:
+        <span id="time">30</span>s
+      </div>
+
+      <div>
+        Nivel:
+        <span id="level">1</span>
+      </div>
+
     </div>
 
     <!-- AREA DE JUEGO -->
@@ -33,15 +465,106 @@
 
       <!-- CARRO -->
       <div id="car">
+
         <div class="wheel w1"></div>
         <div class="wheel w2"></div>
         <div class="wheel w3"></div>
         <div class="wheel w4"></div>
+
       </div>
 
     </div>
 
   </div>
+  <!-- ================= END GAME SECTION ================= -->
+
+  <!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- LOGO / NOMBRE -->
+    <div class="footer-brand">
+
+      <h2>Atrapa las Estrellas</h2>
+
+      <p>
+        Videojuego arcade futurista desarrollado con HTML, CSS y JavaScript.
+      </p>
+
+    </div>
+
+    <!-- ENLACES -->
+    <div class="footer-links">
+
+      <h3>Navegación</h3>
+
+      <ul>
+
+        <li>
+          <a href="#">Inicio</a>
+        </li>
+
+        <li>
+          <a href="#gameplay">Gameplay</a>
+        </li>
+
+        <li>
+          <a href="#screenshots">Imágenes</a>
+        </li>
+
+        <li>
+          <a href="#credits">Créditos</a>
+        </li>
+
+        <li>
+          <a href="#game-section">Jugar</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <!-- TECNOLOGIAS -->
+    <div class="footer-tech">
+
+      <h3>Tecnologías</h3>
+
+      <p>HTML5</p>
+      <p>CSS3</p>
+      <p>JavaScript</p>
+      <p>GitHub Pages</p>
+
+    </div>
+
+    <!-- DESARROLLADOR -->
+    <div class="footer-author">
+
+      <h3>Jennifer Rojas Guitiérrez</h3>
+
+      <p>
+        Proyecto académico enfocado en diseño UX/UI,
+        jugabilidad y desarrollo web interactivo.
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 Atrapa las Estrellas — Todos los derechos reservados.
+    </p>
+
+  </div>
+
+</footer>
+
+<!-- ================= END FOOTER ================= -->
+
 
   <!-- SONIDOS -->
   <audio id="starSound" preload="auto">
